@@ -1,4 +1,4 @@
-HTML містить порожній список ul#ingredients.
+/*HTML містить порожній список ul#ingredients.
 
 <ul id="ingredients"></ul>
 
@@ -19,7 +19,20 @@ const ingredients = [
 Додасть назву інгредієнта як його текстовий вміст.
 Додасть елементу клас item.
 Після чого, вставить усі <li> за одну операцію у список ul#ingredients.
-Завдання 3
+*/
 
+const ingredients = [
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
+];
+const list = document.querySelector("#ingredients");
 
-
+ingredients.forEach(function (ingredient) {
+  let li = document.createElement("li");
+  li.textContent = ingredient;
+  list.append(li);
+});
