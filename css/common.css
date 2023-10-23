@@ -11,6 +11,11 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  background: url("./leafs-3898442_1280.jpg");
+  font-weight: bold;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 input {
@@ -22,16 +27,64 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
-/*--------------------------Task 3-------------*/
+/*------------------------------------------------*/
 .gallery {
-  background-color: cornsilk;
-  display: flexbox;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 150px;
 }
+
 li {
   list-style: none;
 }
+
 img {
-  width: 400px;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+img:hover {
+  box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.16), 6px 8px 10px rgba(0, 0, 0, 0.16),
+    6px 8px 10px rgba(0, 0, 0, 0.16), 6px 8px 10px rgba(0, 0, 0, 0.16);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: solid black;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: black;
+  display: inline-flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+a:hover {
+  border: solid white;
+  background-color: rgb(12, 12, 12);
+  color: white;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: solid black;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: black;
+  display: inline-flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+button {
+  border-radius: 10px;
+  border: solid black;
+  background-color: rgba(249, 249, 249, 0.593);
+  color: black;
 }
