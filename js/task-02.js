@@ -29,10 +29,16 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
-const list = document.querySelector("#ingredients");
 
-ingredients.forEach(function (ingredient) {
-  let li = document.createElement("li");
-  li.textContent = ingredient;
-  list.append(li);
+const ingridientsList = document.querySelector("#ingredients");
+
+const items = ingredients.map((ingredient) => {
+  const listItem = document.createElement("li");
+  listItem.classList.add("item");
+  listItem.textContent = ingredient;
+
+  return listItem;
 });
+
+console.log(items);
+ingridientsList.append(...items);
